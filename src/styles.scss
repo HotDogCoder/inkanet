@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.spacer
+{
+    flex: 1 1 auto;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.owl-wrapper .owl-next, .owl-wrapper .owl-prev {
+    background: transparent !important;
+}
+
+.owl-wrapper .owl-next {
+    background: transparent !important;
+    position: absolute;
+    /* top: 1px !important; */
+    right: 1px !important;
+    top: calc(50% - 30px) !important;
+    font-size: 30px !important;
+    color: white !important;
+}
+
+.owl-wrapper .owl-prev {
+    background: transparent !important;
+    position: absolute;
+    /* top: 1px !important; */
+    left: 1px !important;
+    top: calc(50% - 30px) !important;
+    font-size: 30px !important;
+    color: white !important;
+}
+
+.owl-wrapper-orange .owl-next {
+    background: transparent !important;
+    position: absolute;
+    /* top: 1px !important; */
+    right: 1px !important;
+    top: calc(50% - 30px) !important;
+    font-size: 30px !important;
+    color: #ff7201 !important;
+}
+
+.owl-wrapper-orange .owl-prev {
+    background: transparent !important;
+    position: absolute;
+    /* top: 1px !important; */
+    left: 1px !important;
+    top: calc(50% - 30px) !important;
+    font-size: 30px !important;
+    color: #ff7201 !important;
+}
+
+.owl-theme .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-stage {
+    display: flex;
+    align-items: center;
+}

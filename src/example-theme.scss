@@ -1,0 +1,140 @@
+@import '@angular/material/theming';
+@import './app/pages/default/components/wrapper/default-wrapper.theme.scss';
+@import './app/features/home/components/modal-contact-response/modal-contact-response-theme.scss';
+
+$inkanet-green: (
+    50: #4dbda7,
+    100: #4dbda7,
+    200: #4dbda7,
+    300: #4dbda7,
+    400: #4dbda7,
+    500: #4dbda7,
+    600: #4dbda7,
+    700: #4dbda7,
+    800: #4dbda7,
+    900: #4dbda7,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        600: $dark-primary-text,
+        700: $dark-primary-text,
+        800: $dark-primary-text,
+        900: $dark-primary-text,
+    )
+);
+
+$inkanet-orange: (
+    50: #ff7201,
+    100: #ff7201,
+    200: #ff7201,
+    300: #ff7201,
+    400: #ff7201,
+    500: #ff7201,
+    600: #ff7201,
+    700: #ff7201,
+    800: #ff7201,
+    900: #ff7201,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        600: $dark-primary-text,
+        700: $dark-primary-text,
+        800: $dark-primary-text,
+        900: $dark-primary-text,
+    )
+);
+
+$inkanet-white: (
+    50: #ffffff,
+    100: #ffffff,
+    200: #ffffff,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        600: $dark-primary-text,
+        700: $dark-primary-text,
+        800: $dark-primary-text,
+        900: $dark-primary-text,
+    )
+);
+
+$inkanet-black: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        600: $dark-primary-text,
+        700: $dark-primary-text,
+        800: $dark-primary-text,
+        900: $dark-primary-text,
+    )
+);
+
+@include mat-core();
+$my-theme-light-background: mat-palette($mat-gray, A100);
+$my-theme-light-primary: mat-palette($inkanet-green, 50);
+$my-theme-light-accent: mat-palette($inkanet-orange, 50);
+$my-theme-light-warn: mat-palette($inkanet-white, 50);
+
+$my-theme-dark-primary: mat-palette($inkanet-green, 900);
+$my-theme-dark-accent: mat-palette($mat-blue, 900);
+$my-theme-dark-warn: mat-palette($inkanet-black, 900);
+
+$my-theme-light: mat-light-theme($my-theme-light-primary,$my-theme-light-accent,$my-theme-light-warn);
+// $my-theme-light: define-light-theme
+// (
+//     color: (
+//         primary: $my-theme-light-primary,
+//         secondary: $my-theme-light-accent,
+//         warn: $my-theme-light-warn,
+//         background: $my-theme-light-background
+//     )
+// );
+$my-theme-dark: mat-dark-theme($my-theme-dark-primary,$my-theme-dark-accent,$my-theme-dark-warn);
+
+@include angular-material-theme($my-theme-light);
+
+@mixin custom-theme($theme) {
+    @include angular-material-theme($theme);
+    @include app-default-wrapper-theme($theme);
+    @include app-modal-contact-response-theme($theme);
+}
+
+.light-theme{
+    @include custom-theme($my-theme-light);
+}
+.dark-theme{
+    @include custom-theme($my-theme-dark);
+}

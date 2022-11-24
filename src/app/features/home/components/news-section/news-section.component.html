@@ -1,0 +1,27 @@
+<div class="flex bg-black w-full items-center md:min-h-screen py-5">
+    <div class="owl-wrapper mx-auto px-2 md:px-3 text-center w-full py-5">
+        <p class="text-3xl md:text-5xl text-white pb-5">
+            Aliados estratégicos
+        </p>
+        <!-- <p style="margin: 0 auto !important" class="w-full md:w-1/2 text-center py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quo est fugiat exercitationem nihil culpa quidem deserunt, fuga omnis alias deleniti velit impedit recusandae aliquid dignissimos quam. Et, minus adipisci.</p> -->
+
+        <div *ngIf="brands_array.length > 0">
+            <owl-carousel-o [options]="customOptions">
+
+                <ng-container *ngFor="let brands of brands_array" class="flex items-center">
+                    <ng-template carouselSlide>
+                        <div class="w-full sm:w-3/3 md:w-3/3 lg:w-2/3 xl:w-4/5 flex flex-wrap mx-auto flex-row justify-center px-3">
+                            <div class="bg-white rounded-xl p-3 flex flex-wrap mx-auto flex-row justify-center">
+                                <div *ngFor="let brand of brands" class="bg-white flex items-center px-3 py-3 flex-row relative">
+                                    <img [src]="brand.image" class="object-cover" style="top: 0px; right: 0px; bottom: 0px; left: 0px;" alt="">
+                                </div>
+                            </div>
+                        </div>       
+                    </ng-template>
+                </ng-container>
+            
+            </owl-carousel-o>
+        </div>
+
+    </div>
+</div>
