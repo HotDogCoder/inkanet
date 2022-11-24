@@ -20,27 +20,27 @@ export class GallerySectionComponent implements OnInit {
 
   brands_data = [
     {
-      image: '../../../../../assets/images/barracuda.jpg',
+      image: './assets/images/barracuda.jpg',
       url: ''
     },
     {
-      image: '../../../../../assets/images/celepsa.png',
+      image: './assets/images/celepsa.png',
       url: ''
     },
     {
-      image: '../../../../../assets/images/imperva.jpg',
+      image: './assets/images/imperva.jpg',
       url: ''
     },
     {
-      image: '../../../../../assets/images/paloalto.jpg',
+      image: './assets/images/paloalto.jpg',
       url: ''
     },
     {
-      image: '../../../../../assets/images/TGP.png',
+      image: './assets/images/TGP.png',
       url: ''
     },
     {
-      image: '../../../../../assets/images/fortinet.jpg',
+      image: './assets/images/fortinet.jpg',
       url: ''
     }
   ]

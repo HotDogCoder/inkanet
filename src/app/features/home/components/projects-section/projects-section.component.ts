@@ -48,24 +48,24 @@ export class ProjectsSectionComponent implements OnInit {
     {
       name: 'Ciberseguridad',
       slug: 'ciberseguridad',
-      image: '../../../../../assets/images/services/Ciberseguridad_icono_anaranjado.png',
-      banner: '../../../../../assets/images/services/Ciberseguridad_banner.png',
+      image: './assets/images/services/Ciberseguridad_icono_anaranjado.png',
+      banner: './assets/images/services/Ciberseguridad_banner.png',
       description: 'Tenemos especialistas en ciberseguridad y brindamos soluciones óptimas de seguridad informática para su empresa.',
       active: false
     },
     {
       name: 'CyberSOC',
       slug: 'cyber-soc',
-      image: '../../../../../assets/images/services/CyberSOC_icono_anaranjado.png',
-      banner: '../../../../../assets/images/services/CyberSOC_banner.png',
+      image: './assets/images/services/CyberSOC_icono_anaranjado.png',
+      banner: './assets/images/services/CyberSOC_banner.png',
       description: 'Centro especializado en preparar, identificar y responder a todo tipo de incidente cibernetico. Actuamos en una postura que...',
       active: false
     },
     {
       name: 'Infraestructura',
       slug: 'infraestructura',
-      image: '../../../../../assets/images/services/Infraestructura_icono_anaranjado.png',
-      banner: '../../../../../assets/images/services/Infraestructura_banner.png',
+      image: './assets/images/services/Infraestructura_icono_anaranjado.png',
+      banner: './assets/images/services/Infraestructura_banner.png',
       description: 'Brindamos soluciones networking para fortalecer las redes de datos de su empresa. Nuestras soluciones networking san...',
       active: false
     }
