@@ -815,6 +815,10 @@ video {
     display: none;
   }
 
+  .md\:h-60 {
+    height: 15rem;
+  }
+
   .md\:h-full {
     height: 100%;
   }
