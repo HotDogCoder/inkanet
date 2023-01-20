@@ -2,7 +2,7 @@
 @import './app/pages/default/components/wrapper/default-wrapper.theme.scss';
 @import './app/features/home/components/modal-contact-response/modal-contact-response-theme.scss';
 
-$inkanet-green: (
+$acidjelly-green: (
     50: #4dbda7,
     100: #4dbda7,
     200: #4dbda7,
@@ -27,7 +27,7 @@ $inkanet-green: (
     )
 );
 
-$inkanet-orange: (
+$acidjelly-orange: (
     50: #ff7201,
     100: #ff7201,
     200: #ff7201,
@@ -52,7 +52,7 @@ $inkanet-orange: (
     )
 );
 
-$inkanet-white: (
+$acidjelly-white: (
     50: #ffffff,
     100: #ffffff,
     200: #ffffff,
@@ -77,7 +77,7 @@ $inkanet-white: (
     )
 );
 
-$inkanet-black: (
+$acidjelly-black: (
     50: #000000,
     100: #000000,
     200: #000000,
@@ -104,13 +104,13 @@ $inkanet-black: (
 
 @include mat-core();
 $my-theme-light-background: mat-palette($mat-gray, A100);
-$my-theme-light-primary: mat-palette($inkanet-green, 50);
-$my-theme-light-accent: mat-palette($inkanet-orange, 50);
-$my-theme-light-warn: mat-palette($inkanet-white, 50);
+$my-theme-light-primary: mat-palette($acidjelly-green, 50);
+$my-theme-light-accent: mat-palette($acidjelly-orange, 50);
+$my-theme-light-warn: mat-palette($acidjelly-white, 50);
 
-$my-theme-dark-primary: mat-palette($inkanet-green, 900);
+$my-theme-dark-primary: mat-palette($acidjelly-green, 900);
 $my-theme-dark-accent: mat-palette($mat-blue, 900);
-$my-theme-dark-warn: mat-palette($inkanet-black, 900);
+$my-theme-dark-warn: mat-palette($acidjelly-black, 900);
 
 $my-theme-light: mat-light-theme($my-theme-light-primary,$my-theme-light-accent,$my-theme-light-warn);
 // $my-theme-light: define-light-theme
